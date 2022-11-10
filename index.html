@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes de gama altísima</title>
+
+    <!-- El CSS brutal -->
+    <link rel="stylesheet" href="estiloindex.css">
+
+    <!-- El logo flamígero -->
+    <svg height="95" width="500">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#7878b8;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#2c2c5f;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="100" ry="60" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">VGA</text>
+    </svg>
+</head>
+
+<body>
+    <!-- El titulazo -->
+    <h3>VIAJES GAMA ALTISIMA</h3>
+
+    <!-- El navegadorcito con hovering, por poner un poco de estilo a esta cutrada -->
+    <nav>
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="marte.html">Marte</a></td>
+                    <td><a href="lua.html">Lua</a></td>
+                    <td><a href="antartida.html">Antartida</a></td>
+                    <td><a href="bhutan.html">Bhutan</a></td>
+                    <td><a href="finlandia.html">Finlandia</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </nav>
+    <!-- El formulario de bienvenida -->
+    <div id="letshavefun">
+        <form method="get" action="https://google.es">
+            <label for="destino">Elige tu destino:</label>
+            <select id="destino" name="destino" required="">
+                <option value="" selected="" disabled="" hidden="">aqui</option>
+                <option value="marte">Marte</option>
+                <option value="lua">Lúa</option>
+                <option value="antartida">Antártida</option>
+                <option value="bhutan">Bután</option>
+                <option value="finlandia">Finlandia</option>
+            </select>
+
+            <label for="fechamin">Fecha de ida:</label>
+            <input class="fechamin" type="date" id="fechamin" name="fechamin" min="2022-11-1" required="">
+
+            <label for="fechamax">Fecha de vuelta:</label>
+            <input type="date" id="fechamax" name="fechamax" max="2024-12-31" required="">
+
+            <input class="elboton" type="submit" value="Let's have fun!">
+        </form>
+    </div>
+    <div id="espacio"></div>
+    <div class="center-box">
+        <div id="ofertones">
+            <h1>Ofertones de fin de año</h1>
+            <h3>No te los pierdas!</h3>
+            <p>Por 199999.99€: Marte</p>
+            <p>Por 19999.99€: Lúa</p>
+            <p>Por 2999.99€: Antártida</p>
+            <p>Por 499.99€: Bhután</p>
+            <p>Por 299.99€: Finlandia</p>
+        </div>
+    </div>
+    <!-- Aqui por algún motivo el "a" está mal referenciado pero soy un poco anormal y no se como cerrarlo -->
+    <div class="irocho">
+        <a href="https://irocho.wordpress.com/"><img src="imagenes/irocho.jpg" alt="Oopsie"></a>
+    </div>
+</body>
+<!-- Footer de rigor para que Bea no diga que no soy un chico semántico -->
+<footer>
+</footer>
+
+</html>
